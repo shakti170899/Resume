@@ -3,7 +3,7 @@
 /* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     background-color: #f0f4f8;
@@ -12,12 +12,12 @@ body {
 /* Container */
 .container {
     width: 90%;
-    max-width: 800px;
+    max-width: fit-content ;
     margin: auto;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 50px;
     animation: fadeIn 2s ease-in;
 }
 
@@ -25,31 +25,42 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
     border-bottom: 2px solid #ff6f61;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     background: linear-gradient(135deg, #ff6f61, #de64d6);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Profile Picture */
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px; /* Adjust this value to move the picture to the right */
+    padding-left: 20px; /* Add padding to push the image rightwards */
+}
+
 .profile-picture img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 5px solid #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     animation: pulse 2s infinite;
 }
 
+/* Header Content */
 .header-content {
-    margin-left: 20px;
-    color: #fff;
+    flex-grow: 1;
+    color: #000000;
 }
 
 h1 {
     font-size: 2.5em;
-    color: #fff;
+    color: #ffffff;
     animation: slideIn 1s ease-out;
 }
 
@@ -59,7 +70,7 @@ h2 {
 }
 
 p {
-    color: #fff;
+    color: #000000;
 }
 
 /* Navigation */
@@ -142,8 +153,8 @@ ul {
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #ff6f61; /* Changed background color */
+    color: #ffffff; /* Changed text color */
     text-align: center;
     border-radius: 0 0 8px 8px;
     animation: fadeIn 2s ease-in;
@@ -152,38 +163,4 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9em;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
 }
