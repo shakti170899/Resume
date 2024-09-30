@@ -1,0 +1,68 @@
+/* linkedIn-profile.css */
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5em;
+    color: #0077b5; /* LinkedIn blue color */
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 100%;
+    max-width: 600px; /* Adjust this value as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077b5; /* LinkedIn primary color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005582; /* Darker shade for hover effect */
+}
+
+/* Back button styles */
+.back-button {
+    position: absolute;
+    top: 20px; /* Adjust the position as needed */
+    left: 20px; /* Adjust the position as needed */
+    background-color: #0077b5; /* Same color as footer */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #005582; /* Hover color */
+}
